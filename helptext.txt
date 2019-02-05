@@ -1,0 +1,3 @@
+!gen [items] -- Procedurally generates an item 
+!help -- Don' play dumb with me boy
+!itemlist -- lists the items that can be generated

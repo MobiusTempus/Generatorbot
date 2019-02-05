@@ -1,0 +1,98 @@
+Violence is in the air.; 2
+Barrels instead of chairs, planks instead of tables.; 0
+Big fireplace.; 0
+Pelts on walls.; 0
+Long communal table.; 1
+Gambling den.; 2
+A mediocre bard is performing to an ambivalent crowed.; 0
+A very nice and affectionate dog.; 1
+Grumpy owner.; -1
+Singing waiter.; 0
+Singing waitress.; 0
+Stomped floor.; 0
+Birthday party.; 4
+Drunk adventurers.; 3
+Lots of hunting trophies.; 0
+Stone furniture.; 0
+Many weapons on the wall.; 0
+A small library in the corner.; 0
+One armed owner.; 0
+The room is very silent.; 1
+A group surrounds two large men arm wrestling, they appear to have been there for quite a while.; 4
+A small shrine at the end of the bar.; 0
+A very pretty waitress.; 2
+A very good looking waiter.; 2
+A collection of fine plates.; 0
+Everything is spotless.; -1
+A small wrestling ring at the center.; 1
+A playpen for small children near the bar.; 0
+A waiter with a peg leg.; 0
+A waitress with a peg leg.; 0
+A table and some chairs are broken.; 0
+A patron is sleeping on the floor.; 1
+A large amount of cats everywhere.; 0
+Numerous painting of the owners with large fish.; 0
+A game of horse shoes in a corner.; 0
+A proper stage with seats.; 0
+A finely carved but dusty statue in a dark corner.; 0
+The bar is circular and at at the center of the room.; 0
+Behind the bar is an extensive collection of rare drinks.; 0
+There is stag due in progress.; 4
+There is bachelorette party in progress.; 4
+There is a couple kissing at the bar.; 
+There is a man playing three shells and a pea in the corner.; 1
+There is an entry fee but once inside beer is free.; -1
+The owner is distinctly foreign.; 0
+The owner practices juggling when they have a free moment, they are still pretty bad.; 0
+The owner whistles when cleaning glasses, it is cute lovely.; 0
+The windows are stained glass.; 0
+The tables have fine engravings in the corners.; 0
+One of the wall is a quite elaborate fresco.; 0
+There is a large stone and crystal collection behind the bar.; 0
+There is a rusting suit of armor right as you open the door, the arms are raised, wielding a sword.; 0
+Loud swearing can be heard from the kitchen.; 0
+The whole front room smells, the odor is indescribable, but not unpleasant.; 0
+There is a large, well crafted grandfather cloak behind the bar.; 0
+A three way drinking contest is in progress, a fourth participant is under the table, snoring.; 4
+There is a stack of animal skulls on the bar, each one has a burning candle inside.; 4
+There is an expensive looking chandelier hanging from the surprisingly high ceiling.; 0 
+The inn is hexagonal.; 0
+There is a fireplace in all four corners of the front room.; 0
+The tables are a couple of feet lower then the bar.; 0
+There is a large window in the ceiling.; 0
+An intricate slide and pulley system allow beer to be delivered to every table without leaving the bar.; 0
+Behind the bar is a wired skeleton, if asked about it the owner says it's his father.; 0
+On the top shelf there is a series of jars with various body parts.; 0
+The owners are a pair of identical twins.; 0
+There is a parrot at the bar, it whistles continuously.; 0
+As you walk in a food fight breaks out.; 5
+A group is quietly sitting, listening to a man telling a story.; 4  
+The bar is made of marble.; 0
+There are two rival bars in the same in, the both work for the inn but get a share of the profit.; 1
+The inn used to be a church, the bar contains the altar.; 0
+The inn is in a cave.; 0
+The inn is a large boat that hasn't moved for years.; 0
+The inn has a watch tower attached.; 0
+The inn used to be a fort, the windows are arrow slits.; 0
+The inn has its own moat, about half a metre wide, complete with miniature drawbridge.; 0
+The inn has a omnipresent shrimp theme.; 0
+The inn has two large tapestries, rotten but still quite impressive.; 0
+On the roof is a large telescope.; 0
+The inn is quite small but has four floors.; 0
+There is a well at the center of the front room.; 0
+The inn is light by candles that give off a green light.; 0
+The inn is closed for renovations.; 0
+The inn is closed to accommodate an important delegations.; 2
+The inn is patroned by a knightly order.; 2
+The inn is patroned by the local law enforcement; 2
+The inn is patroned by hardened criminals.; 2
+The inn is patroned by several nobles.; 2
+There is a two headed dog.; 0
+There is a two tailed cat.; 0
+The inn uses glasses made by the owner.; 0
+The drinks come in wooden boots.; 0
+There is a small stream going through the front room.; 0
+There are dozens of lush potted plants.; 0
+One of the walls is a giant tree.; 0
+The tables are all tree stumps coming trough the floor.; 0
+There are several private booths; 0

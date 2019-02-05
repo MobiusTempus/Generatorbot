@@ -1,0 +1,15 @@
+__Names__
+ * randomname / rname -- Generates a name procedurally with quite wild outcomes
+ * malename /mname -- Picks a male name from a list of 5k+ names from American records
+ * femalename /fname -- Picks a female name from a list of 5k+ names from American records
+ * surname /sname -- Picks a surname from a list of 5k+ names from American records
+
+__NPC__
+ * fantasyNPC / fNPC [(Job)=random] -- Procedurally generates a fantasy character with shown (Name, Gendre, Age, Job and Characteristic) and hidden proprieties (Trait, Secret). You can input a set job
+
+__Inn__
+ * fantasyinn / finn / inn -- Procedurally generates a fantasy inn with shown (Name, Oddity, Age, and Specialty) and hidden proprieties (Secret) as well as an owner and waiter.
+
+__Mission__
+ * mission / mis / m [(difficulty)=random] -- Procedurally generates a mission with shown (Difficulty, Objectives, Rewards and Complications) and hidden proprieties (Secret complications). Higher difficulties have  more objectives and complications as well as higher rewards. A difficulty can be set manually.
+ * jobboard / jb [(number)=5] -- Procedurally generates a list of missions with shown (Difficulty, Objectives, Rewards and Complications) and hidden proprieties (Secret complications). You input the number of missions with a default of five.
