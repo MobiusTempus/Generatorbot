@@ -1,10 +1,13 @@
 import random
 import randomnamegenerator
 
-#The output has seven parts output["name"], output["age"], output["characteristic"], output["trait"], output["occupation"], output["gender"], output["secret"]
+#The output is an object with seven keys output["name"], output["age"], output["characteristic"], output["trait"], output["occupation"], output["gender"], output["secret"]
  
 with open("characteristics.txt", encoding='latin-1') as f:
     characteristiclist = f.read().splitlines() 
+	
+with open("medievalcharacteristics.txt", encoding='latin-1') as f:
+    characteristiclist += f.read().splitlines() 
 	
 with open("traits.txt", encoding='latin-1') as f:
     traitlist = f.read().splitlines() 	
@@ -17,6 +20,9 @@ with open("charactersecrets.txt", encoding='latin-1') as f:
 	
 with open("fantasycharactersecrets.txt", encoding='latin-1') as f:
     secretlist += f.read().splitlines() 	
+	
+with open("medievalcharactersecrets.txt", encoding='latin-1') as f:
+    secretlist += f.read().splitlines() 
 	
 with open("femalename.txt", encoding='latin-1') as f:
     femalenamelist = f.read().splitlines()

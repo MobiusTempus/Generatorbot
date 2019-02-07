@@ -1,5 +1,7 @@
 import numpy as np
 
+# Generates a genuine sounding inn name from two tables
+
 with open("innnamespart1.txt") as f:
     part1 = f.read().splitlines() 	
 	
