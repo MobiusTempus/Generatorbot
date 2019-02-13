@@ -3,7 +3,7 @@ from discord.ext import commands
 import interface
 
 with open("token.txt", encoding='latin-1') as f:
-    TOKEN = f.read().splitlines() 
+    TOKEN = f.read() 
 
 with open("helptext.txt") as f:
     helptext = f.read().splitlines() 
@@ -66,7 +66,3 @@ async def itemlist(ctx):
 	
 bot.run(TOKEN)
 	
-
-
-	
-bot.run(TOKEN)
