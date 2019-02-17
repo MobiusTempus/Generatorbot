@@ -1,6 +1,31 @@
+Need more entries
+Setlment problem, oddity and asset
+
+
+Stage 1
 Villain generator
 Settlement generator
 Dungeon generator
 Castle generator
+Travel encouters
+Monster generator
+Book generator
+Ship generator
+news generator
+religion generator
+cult generator
+
+Stage 2
 SiFi stuff
+Modern stuff
+Near futur stuff
+Ciberpunk stuff 
+Wild west stuff
+Wird west stuff
+Urban fantasy stuff
+SiFan stuff
 Alien generator
+Travel encouters
+
+Reminder
+Add religion generator to chruch in insituation generator

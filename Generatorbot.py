@@ -4,6 +4,10 @@ import interface
 
 with open("token.txt", encoding='latin-1') as f:
     TOKEN = f.read() 
+	
+with open("discordid.txt", encoding='latin-1') as f:
+    myid = f.read() 
+	
 
 with open("helptext.txt") as f:
     helptext = f.read().splitlines() 
@@ -63,6 +67,19 @@ async def itemlist(ctx):
 		output += i + "\n"
 		
 	await bot.say(output)
+	
+@bot.command(pass_context=True)	
+async def myid(ctx):
+
+	output = ctx.message.author.id
+		
+	await bot.say(output)
+
+@bot.command(pass_context=True)		
+async def kill(ctx):
+
+	if ctx.message.author.id == myid:
+		await bot.logout()
 	
 bot.run(TOKEN)
 	

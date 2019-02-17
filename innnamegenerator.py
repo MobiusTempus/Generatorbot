@@ -21,6 +21,6 @@ def main():
 		
 	if np.random.random() < 0.05:
 	
-		output += "inn"
+		output += " Inn"
 	
 	return(output)

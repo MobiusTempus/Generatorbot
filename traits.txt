@@ -25,7 +25,7 @@ Desperate to do good.
 Dishonest
 Disloyal
 Disorder
-Dreaming about a family and a house. Will do anything to realize it.
+Dreaming about a family and a house, will do anything to realize it.
 Dreams of flying.
 Dubious
 Dumb
@@ -43,7 +43,8 @@ Gossip
 Gullible
 Hard
 Has no sense of orientation.
-Haunted by dreams of a family dying in a fire. Sometimes hallucinates.
+Haunted by dreams of a family dying in a fire. 
+Sometimes hallucinates.
 Hedonistic
 Hoarder
 Hoity-toity
@@ -112,7 +113,7 @@ Selfish
 Senile
 Shallow
 Skeptic
-Skilled at gambling. Booted from three villages.
+Skilled at gambling, booted from three villages.
 Sleeps badly, sees holy visions at night.
 Smart Ass
 Soft-hearted

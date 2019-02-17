@@ -74,15 +74,18 @@ def main(occupation = "generate"):
 		NPClist[i]["age"] = random.randint(40, 90)
 	NPClist[i]["characteristic"] = str(random.choice(characteristiclist))
 	NPClist[i]["trait"] = random.choice(traitlist)
+	
 	if occupation == "generate":
 		NPClist[i]["occupation"] = random.choice(occupationlist)
+		NPClist[i]["occupationgenerated"] = True 
 	else:
 		NPClist[i]["occupation"] = occupation
+		NPClist[i]["occupationgenerated"] = False 
 	
 	if random.random() < 0.30:
 		NPClist[i]["secret"] = random.choice(secretlist)
 	else:
-		NPClist[i]["secret"] = "Has no secrets"
+		NPClist[i]["secret"] = "Has no secret"
 		
 	return(NPClist[i])
    
