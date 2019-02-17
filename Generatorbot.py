@@ -80,6 +80,8 @@ async def kill(ctx):
 
 	if ctx.message.author.id == myid:
 		await bot.logout()
+	else
+		await bot.say("You are not allowed to do that.")
 	
 bot.run(TOKEN)
 	
