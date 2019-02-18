@@ -294,6 +294,9 @@ def fantasysettlementformat(settlement):
 				 + "\nSpeciality: " + institution["specialty"]				
 			output += "\nSecret: " + institution["secret"]		
 			
+			secretoutput += output
+			output = ""
+			
 			owner = fantasyNPCgenerator.main("Owner")
 			waiter = fantasyNPCgenerator.main("Waiter")
 			
