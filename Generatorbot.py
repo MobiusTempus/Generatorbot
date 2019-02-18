@@ -6,7 +6,8 @@ with open("token.txt", encoding='latin-1') as f:
     TOKEN = f.read() 
 	
 with open("discordid.txt", encoding='latin-1') as f:
-    myid = f.read() 
+    idnum = f.read()
+	
 	
 
 with open("helptext.txt") as f:
@@ -19,13 +20,16 @@ description = 'placeholder'
 bot = commands.Bot(command_prefix='!', description=description)
 bot.remove_command("help")
 
+n = 0
+
 
 @bot.event
 async def on_ready():
-    print('Logged in as')
-    print(bot.user.name)
-    print(bot.user.id)
-    print('------')
+	print('Logged in as')
+	print(bot.user.name)
+	print(bot.user.id)
+	print(idnum)
+	print('------')
 	
 	
 @bot.command(pass_context=True)
@@ -39,6 +43,7 @@ async def hi(ctx):
 async def gen(ctx, arg1  = "nothing was entered0", arg2 = "nothing was entered0", arg3  = "nothing was entered0", arg4  = "nothing was entered0"):
 
 	openoutput, secretoutput = interface.main(ctx, arg1, arg2, arg3, arg4)
+	n += 1
 	
 	if openoutput == secretoutput:
 		await bot.say(openoutput)
@@ -48,7 +53,6 @@ async def gen(ctx, arg1  = "nothing was entered0", arg2 = "nothing was entered0"
 		else:
 			await bot.say(openoutput)
 			await bot.send_message(ctx.message.author, secretoutput)
-		
 		
 @bot.command(pass_context=True)
 async def help(ctx):
@@ -65,6 +69,9 @@ async def itemlist(ctx):
 	output = ""
 	for i in itemlisttext:
 		output += i + "\n"
+		if i == "":
+			await bot.say(output)
+			output = ""
 		
 	await bot.say(output)
 	
@@ -76,12 +83,15 @@ async def myid(ctx):
 	await bot.say(output)
 
 @bot.command(pass_context=True)		
-async def kill(ctx):
+async def kill(ctx, arg = 0):
 
-	if ctx.message.author.id == myid:
+
+	if ctx.message.author.id == str(idnum):
+		await bot.say("Bot terminated, it was used " + str(n) + " times.")
+		print("Bot terminated, it was used " + str(n) + " times.")
 		await bot.logout()
 	else:
-		await bot.say("You are not allowed to do that.")
+		await bot.say("Invalid password.")
 	
 bot.run(TOKEN)
 	

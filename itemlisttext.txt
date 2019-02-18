@@ -13,7 +13,7 @@ __Inn__
 __Mission__
  * mission / mis / m [(difficulty)=random] -- Procedurally generates a mission with shown (Difficulty, Objectives, Rewards and Complications) and hidden proprieties (Secret complications). Higher difficulties have  more objectives and complications as well as higher rewards. A difficulty can be set manually.
  * jobboard / jb [(number)=5] -- Procedurally generates a list of missions with shown (Difficulty, Objectives, Rewards and Complications) and hidden proprieties (Secret complications). You input the number of missions with a default of five.
- 
+
 __Settlement__
  * fantasysettlement / fsettlement / fset [(size)=random] -- Procedurally generates a settlement with shown (Size(Outpost/Hamlet/Village/Town/City), Name, Population, Asset, Oddity, a ruler(character/or conciel) and at least one institution and hidden proprieties (Age, problem, more info on ruler, more info on institutions).
  * fantasyoutpost / foutpost -- Procedurally generates a outpost with shown (Size, Name, Population, Asset, Oddity, a ruler(character/or council) and one institution and hidden proprieties (Age, problem, more info on ruler, more info on institution).

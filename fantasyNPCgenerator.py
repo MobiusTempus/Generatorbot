@@ -66,8 +66,6 @@ def main(occupation = "generate"):
 	if random.random() < 0.5:
 		NPClist[i]["name"] += " " + random.choice(surnamelist)
 			
-	
-			
 	if random.random() < 0.8:			
 		NPClist[i]["age"] = random.randint(15, 40)
 	else:
