@@ -339,4 +339,10 @@ def fantasysettlementformat(settlement):
 			
 			secretoutput += "\n**Dean**\n" + secretcharaformat(dean)
 			
+		elif institution["identifier"] == 7: #Park
+		
+			secretoutput += "\nCentre piece: " + institution["centrepiece"] + "\n"
+			
+
+			
 	return(openoutput, secretoutput)

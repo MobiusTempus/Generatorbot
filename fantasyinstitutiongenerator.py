@@ -15,7 +15,7 @@ succourlist = ["Orphanage", "Healing", "Protection", "Feeding", "Caritative Care
 directionslist = ["North", "South", "East", "Weast", "Old", "New", "Morning", "Evening"]
 
 parknameslist = ["Park", "Lawn", "Yard", "Garden", "Yard", "Estate"]
-parkcentrepiecelist = ["Fountain", "Statue", "Great tree", "Monument", "Lake", "Playground", "Gazebo", "Maze"]
+parkcentrepiecelist = ["Fountain", "Statue", "Great tree", "Monument", "Lake", "Playground", "Gazebo", "Maze", "Flowerbed"]
 
 universitynamelist = ["University", "Academy", "School", "College"]
 	
