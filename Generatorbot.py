@@ -20,8 +20,6 @@ description = 'placeholder'
 bot = commands.Bot(command_prefix='!', description=description)
 bot.remove_command("help")
 
-n = 0
-
 
 @bot.event
 async def on_ready():
@@ -43,7 +41,6 @@ async def hi(ctx):
 async def gen(ctx, arg1  = "nothing was entered0", arg2 = "nothing was entered0", arg3  = "nothing was entered0", arg4  = "nothing was entered0"):
 
 	openoutput, secretoutput = interface.main(ctx, arg1, arg2, arg3, arg4)
-	n += 1
 	
 	if openoutput == secretoutput:
 		await bot.say(openoutput)
@@ -87,11 +84,11 @@ async def kill(ctx, arg = 0):
 
 
 	if ctx.message.author.id == str(idnum):
-		await bot.say("Bot terminated, it was used " + str(n) + " times.")
-		print("Bot terminated, it was used " + str(n) + " times.")
+		await bot.say("Bot terminated.")
+		print("Bot terminated.")
 		await bot.logout()
 	else:
-		await bot.say("Invalid password.")
+		await bot.say("You are not the chossen one.")
 	
 bot.run(TOKEN)
 	
