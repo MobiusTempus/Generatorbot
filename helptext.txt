@@ -1,3 +1,4 @@
-!gen [items] -- Procedurally generates an item 
-!help -- Don' play dumb with me boy
-!itemlist -- lists the items that can be generated
+@prefix@gen [items] -- Procedurally generates an item 
+@prefix@help -- Don' play dumb with me boy
+@prefix@itemlist -- lists the items that can be generated
+@prefix@gbchangeprefix [prefix] -- Changes the bot command prefix for the server, \"!\" by default

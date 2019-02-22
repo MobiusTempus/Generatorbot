@@ -6,7 +6,7 @@ adjectivelist = ["A grim", "A spotless", "An overcrowded", "A worn down", "An an
 
 institutionlist = ["inn", "tavern", "trading post", "temple", "library", "university", "park"]
 	
-tradingnameslist = ["Trading Post", "Bazaar", "Marcket", "Arcade", "Souk"]
+tradingnameslist = ["Trading Post", "Bazaar", "Market", "Arcade", "Souk"]
 
 templenameslist = ["Church", "Temple", "Chapel", "Cathedral"]
 templeadjectivelist = ["Holy", "Blessed", "Savior", "Revered", "Sacred", "Hallowed"]
