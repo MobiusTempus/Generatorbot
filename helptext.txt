@@ -1,3 +1,5 @@
+Generatorbot is a tool developed for helping to run rpgs by creating randomly generated prompts. It is intended to be used both as a prep and inprove tool. This is an amature project made for fun.
+
 @prefix@gen [items] -- Procedurally generates an item 
 @prefix@help -- Don' play dumb with me boy
 @prefix@itemlist -- lists the items that can be generated

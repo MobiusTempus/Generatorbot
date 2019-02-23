@@ -12,7 +12,13 @@ with open("discordid.txt", encoding='latin-1') as f:
 prefixes = hb.rotate(hb.arrayreader("prefixes.txt"))
 prefixes[0] = [int(i) for i in prefixes[0]]
 
-def prefix(bot, message):
+with open("helptext.txt", encoding='latin-1') as f:
+		helptext = f.read().splitlines() 
+	
+with open("itemlisttext.txt", encoding='latin-1') as f:
+    itemlisttext = f.read().splitlines()
+	
+def prefix(bot, message): # Function finds the prefix ussed by the guild
 	
 	prefix = "!"
 	if isinstance(message.channel, discord.abc.GuildChannel):
@@ -21,15 +27,7 @@ def prefix(bot, message):
 				prefix = int(prefixes[0][n-1])
 				prefix = str(prefixes[1][n-1])
 			
-	return(prefix)
-
-with open("helptext.txt", encoding='latin-1') as f:
-		helptext = f.read().splitlines() 
-	
-with open("itemlisttext.txt", encoding='latin-1') as f:
-    itemlisttext = f.read().splitlines()
-	
-	
+	return(prefix)	
 
 description = 'placeholder'
 bot = commands.Bot(command_prefix=prefix)
@@ -46,12 +44,13 @@ async def on_ready():
 	
 	
 @bot.command()
-async def hi(ctx):
+async def hi(ctx): # For testing
 
 
 	output = "Hello there, General " + ctx.message.author.name
 	await ctx.send(output)
 	
+# The most important function, calls interface to generate all the bots content
 @bot.command()
 async def gen(ctx, arg1  = "nothing was entered0", arg2 = "nothing was entered0", arg3  = "nothing was entered0", arg4  = "nothing was entered0"):
 
@@ -59,15 +58,12 @@ async def gen(ctx, arg1  = "nothing was entered0", arg2 = "nothing was entered0"
 	
 	if openoutput == secretoutput:
 		await ctx.send(openoutput)
-		print("Same outputs")
 	else:
 		if isinstance(ctx.message.channel, discord.abc.GuildChannel):
 			await ctx.send(openoutput)
 			await ctx.message.author.send(secretoutput)
-			print("Servergen")
 		else:
 			await ctx.send(secretoutput)
-			print("Privategen")
 		
 @bot.command()
 async def help(ctx):
@@ -80,6 +76,7 @@ async def help(ctx):
 		
 	await ctx.send(output)
 	
+# Prints out the list of things that can be generated
 @bot.command()	
 async def itemlist(ctx):
 
@@ -99,6 +96,7 @@ async def myid(ctx):
 		
 	await ctx.send(output)
 	
+# Allows to change the bot prefix for one server
 @bot.command()
 async def gbchangeprefix(ctx, arg1):
 
@@ -124,6 +122,7 @@ async def gbchangeprefix(ctx, arg1):
 		
 	await ctx.send(output)
 
+# Terminated the bot, can only be called by the id in "discordid.txt"
 @bot.command()	
 async def kill(ctx, arg = 0):
 

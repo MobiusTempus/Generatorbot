@@ -26,6 +26,10 @@ with open("medievalsurname.txt", encoding='latin-1') as f:
 
 def main(ctx, arg1, arg2, arg3, arg4):
 
+# /|\\|//|\\|//|\\|//|\\|//|\\|//|\\|//|\\|//|\\|//|\\|/
+#					Names
+# /|\\|//|\\|//|\\|//|\\|//|\\|//|\\|//|\\|//|\\|//|\\|/
+
 	if arg1 == "randomname" or arg1 == "rname":
 		openoutput = randomnamegenerator.main()
 		
@@ -37,6 +41,10 @@ def main(ctx, arg1, arg2, arg3, arg4):
 		
 	elif arg1 == "surname" or arg1 == "sname":
 		openoutput = np.random.choice(surnamelist)
+		
+# /|\\|//|\\|//|\\|//|\\|//|\\|//|\\|//|\\|//|\\|//|\\|/
+#					NPCS
+# /|\\|//|\\|//|\\|//|\\|//|\\|//|\\|//|\\|//|\\|//|\\|/
 		
 	elif arg1 == "fantasyNPC" or arg1 == "fNPC":
 		#Generates a fantasy NPC.
@@ -55,6 +63,10 @@ def main(ctx, arg1, arg2, arg3, arg4):
 			output += "\nSecret: " + dummy
 			
 		secretoutput = output
+		
+# /|\\|//|\\|//|\\|//|\\|//|\\|//|\\|//|\\|//|\\|//|\\|/
+#					Inns
+# /|\\|//|\\|//|\\|//|\\|//|\\|//|\\|//|\\|//|\\|//|\\|/
 		
 	elif arg1 == "fantasyinn" or arg1 == "finn" or arg1 == "inn":
 		inn = fantasyinngenerator.main()
@@ -80,6 +92,10 @@ def main(ctx, arg1, arg2, arg3, arg4):
 		secretoutput += "\n\n**Waiter**\nName: " + waiter["name"] + "\nGender: " + waiter["gender"] + "\nAge: " \
 		+ str(int(waiter["age"])) + "\nOccupation: " + str(waiter["occupation"]) + "\nCharacteristic: " \
 		+ waiter["characteristic"]+ "\nTrait: " + waiter["trait"] + "\nSecret: " + waiter["secret"]
+		
+# /|\\|//|\\|//|\\|//|\\|//|\\|//|\\|//|\\|//|\\|//|\\|/
+#					Missions
+# /|\\|//|\\|//|\\|//|\\|//|\\|//|\\|//|\\|//|\\|//|\\|/
 		
 	elif arg1 == "mission" or arg1 == "mis" or arg1 == "m":
 			#Generates a mission.
@@ -149,6 +165,10 @@ def main(ctx, arg1, arg2, arg3, arg4):
 			secretoutput += output
 			output = ""
 			
+# /|\\|//|\\|//|\\|//|\\|//|\\|//|\\|//|\\|//|\\|//|\\|/
+#					Settlements
+# /|\\|//|\\|//|\\|//|\\|//|\\|//|\\|//|\\|//|\\|//|\\|/
+			
 	elif arg1 == "fantasysettlement" or arg1 == "fsettlement" or arg1 == "fset": #fantasy settlement
 		if arg2 == "nothing was entered0":
 			arg2 = 0
@@ -180,6 +200,12 @@ def main(ctx, arg1, arg2, arg3, arg4):
 					
 		
 	# end of generator
+	
+	
+# /|\\|//|\\|//|\\|//|\\|//|\\|//|\\|//|\\|//|\\|//|\\|/
+#					Book keeping
+# /|\\|//|\\|//|\\|//|\\|//|\\|//|\\|//|\\|//|\\|//|\\|/
+
 	elif arg1 == "nothing was entered0":
 		openoutput = "There must be an argument after gen, use !itemlist to get a list"
 		
