@@ -20,7 +20,7 @@ def main(difficulty = 0):
 	reward = random.randint(8, 12) * 4**difficulty * 10
 
 	objectivenum = 1
-	objectivenum += 1 + round((random.random()*difficulty/3))
+	objectivenum += round((random.random()*difficulty/3))
 
 	objectives = []
 	while len(objectives) < objectivenum:

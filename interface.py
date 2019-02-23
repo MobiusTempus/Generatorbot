@@ -106,15 +106,15 @@ def main(ctx, arg1, arg2, arg3, arg4):
 			mission = missiongenerator.main(int(arg2))
 		
 		output = "Difficulty: " + str(mission["difficulty"]) + "\nObjective: \n"
-		i = 1
+		i = 0
 		while i < len(mission["objectives"]):
 			output += "   * " + mission["objectives"][i-1] + "\n"
 			i += 1
 		
-		output += "Reward: " + str(mission["reward"])
+		output += "Reward: " + str(mission["reward"]) + "\n"
 		
 		if len(mission["opencomplications"]) > 0:
-			output += "\nComplications: \n" 
+			output += "Complications: \n" 
 			i = 0
 			while i < len(mission["opencomplications"]):
 				output += "   * " + mission["opencomplications"][i] + "\n"
@@ -124,7 +124,7 @@ def main(ctx, arg1, arg2, arg3, arg4):
 
 		if len(mission["secretcomplications"]) > 0:	
 			output += "Secret complications: \n"
-			i = 1
+			i = 0
 			while i < len(mission["secretcomplications"]):
 				output += "   * " + mission["secretcomplications"][i-1] + "\n"
 				i += 1
