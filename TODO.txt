@@ -4,7 +4,6 @@ Setlment problem, names, oddity and asset
 
 Stage 1
 Villain generator
-Settlement generator
 Dungeon generator
 Castle generator
 Travel encouters

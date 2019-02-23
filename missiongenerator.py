@@ -12,7 +12,7 @@ def main(difficulty = 0):
 	complicationlist = hb.rotate(hb.arrayreader("missioncomplications.txt"))
 	j=1
 	while j < 3:
-		compicationlist[j] = [float(i) for i in compicationlist[j]]
+		complicationlist[j] = [float(i) for i in complicationlist[j]]
 		j += 1
 		
 	if difficulty == 0:
@@ -35,24 +35,24 @@ def main(difficulty = 0):
 	
 	opencomplications = []
 	while len(opencomplications) < opencompicationnum:
-		compicationlist[1] = hb.normalise(compicationlist[1])
-		dumb = np.random.choice(compicationlist[0], p=compicationlist[1])
-		index = compicationlist[0].index(dumb)
+		complicationlist[1] = hb.normalise(complicationlist[1])
+		dumb = np.random.choice(complicationlist[0], p=complicationlist[1])
+		index = complicationlist[0].index(dumb)
 		opencomplications.append(dumb)
-		reward *= float(compicationlist[3][index])
-		compicationlist = hb.arraycleaner(compicationlist, index)
+		reward *= float(complicationlist[3][index])
+		complicationlist = hb.arraycleaner(complicationlist, index)
 		
 		
 	secretcompicationnum = random.randint(0, 2) + round((random.random()*difficulty/4))
 	
 	secretcomplications = []
 	while len(secretcomplications) < secretcompicationnum:
-		compicationlist[2] = hb.normalise(compicationlist[2])
-		dumb = np.random.choice(compicationlist[0], p=compicationlist[2])
-		index = compicationlist[0].index(dumb)
+		complicationlist[2] = hb.normalise(complicationlist[2])
+		dumb = np.random.choice(complicationlist[0], p=complicationlist[2])
+		index = complicationlist[0].index(dumb)
 		secretcomplications.append(dumb)
-		reward *= float(compicationlist[3][index])
-		compicationlist = hb.arraycleaner(compicationlist, index)
+		reward *= float(complicationlist[3][index])
+		complicationlist = hb.arraycleaner(complicationlist, index)
 		
 	reward = hb.sigfig(reward,2)
 	

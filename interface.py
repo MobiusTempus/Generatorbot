@@ -112,18 +112,18 @@ def main(ctx, arg1, arg2, arg3, arg4):
 			i += 1
 		
 		output += "Reward: " + str(mission["reward"]) + "\nComplications: \n" 
-		if len(mission["opencompications"]) > 0:
+		if len(mission["opencomplications"]) > 0:
 			i = 1
-			while i < len(mission["opencompications"]):
-				output += "   * " + mission["opencompications"][i-1] + "\n"
+			while i < len(mission["opencomplications"]):
+				output += "   * " + mission["opencomplications"][i-1] + "\n"
 				i += 1
 		openoutput = output
 
-		if len(mission["secretcompications"]) > 0:	
+		if len(mission["secretcomplications"]) > 0:	
 			output += "Secret complications: \n"
 			i = 1
-			while i < len(mission["secretcompications"]):
-				output += "   * " + mission["secretcompications"][i-1] + "\n"
+			while i < len(mission["secretcomplications"]):
+				output += "   * " + mission["secretcomplications"][i-1] + "\n"
 				i += 1
 		secretoutput = output
 		
@@ -149,18 +149,18 @@ def main(ctx, arg1, arg2, arg3, arg4):
 				i += 1
 			
 			output += "Reward: " + str(mission["reward"]) + "\nComplications: \n" 
-			if len(mission["opencompications"]) > 0:
+			if len(mission["opencomplication"]) > 0:
 				i = 0
-				while i < len(mission["opencompications"]):
-					output += "   * " + mission["opencompications"][i] + "\n"
+				while i < len(mission["opencomplication"]):
+					output += "   * " + mission["opencomplication"][i] + "\n"
 					i += 1
 			openoutput += output
 			
-			if len(mission["secretcompications"]) > 0:	
+			if len(mission["secretcomplication"]) > 0:	
 				output += "Secret complications: \n"
 				i = 0
-				while i < len(mission["secretcompications"]):
-					output += "   * " + mission["secretcompications"][i] + "\n"
+				while i < len(mission["secretcomplication"]):
+					output += "   * " + mission["secretcomplication"][i] + "\n"
 					i += 1
 			secretoutput += output
 			output = ""
